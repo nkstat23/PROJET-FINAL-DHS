@@ -1,8 +1,8 @@
 # Importations nécessaires
 #from jupyter_dash import JupyterDash
-from dash import Dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import Dash, html,dcc
+#import dash_core_components as dcc
+#import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash import dash_table
 from dash.dependencies import Input, Output
