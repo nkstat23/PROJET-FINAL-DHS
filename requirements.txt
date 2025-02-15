@@ -4,3 +4,4 @@ pandas==1.5.3
 plotly==5.13.1
 gunicorn==20.1.0
 numpy>=1.21,<2
+jupyter_dash
