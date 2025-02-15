@@ -22,7 +22,7 @@ def load_data_pandas():
     return df
 
 def preprocess_data_pandas():
-    df = pd.read_csv("cpu.csv")
+    df = pd.read_csv("Pakistan Largest Ecommerce Dataset.csv")
     df = df.drop('Unnamed: 0', axis=1)
     df['item_id'] = df['item_id'].astype(str)
     #df['Year'] = df['Year'].astype(str)
