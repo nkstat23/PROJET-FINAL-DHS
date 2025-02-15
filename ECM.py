@@ -15,14 +15,14 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # --- Chargement et prétraitement des données avec Pandas ---
-def load_data_pandas():
+#def load_data_pandas():
     # Charger les données à partir d'un fichier CSV
     # Remplacez le chemin par le chemin réel vers votre fichier
-    df = pd.read_csv("donnees.csv")
-    return df
+    #df = pd.read_csv("donnees.csv")
+    #return df
 
 def preprocess_data_pandas():
-    df = pd.read_csv("Pakistan Largest Ecommerce Dataset.csv")
+    df = pd.read_csv("cpu.csv")
     df = df.drop('Unnamed: 0', axis=1)
     df['item_id'] = df['item_id'].astype(str)
     #df['Year'] = df['Year'].astype(str)
