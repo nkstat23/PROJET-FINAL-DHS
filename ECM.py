@@ -1,5 +1,5 @@
 # Importations nécessaires
-from jupyter_dash import JupyterDash
+#from jupyter_dash import JupyterDash
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -47,7 +47,8 @@ external_stylesheets = [
     dbc.themes.LUX,
     "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
 ]
-app = JupyterDash(__name__, external_stylesheets=external_stylesheets)
+app = Dash(__name__)
+server = app.server
 
 
 # =============================================================================
@@ -849,5 +850,4 @@ def update_client_loyal_table(year_range, selected_categories, selected_payments
 # =============================================================================
 if __name__ == '__main__':
     # On ouvre l'application dans le navigateur sur le port 8051
-    app.run_server(mode='external', debug=False)
-    #port=8051,
+    app.run_server(debug=False)
