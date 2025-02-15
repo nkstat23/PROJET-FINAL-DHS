@@ -28,6 +28,7 @@ def preprocess_data_pandas():
     #df['Year'] = df['Year'].astype(str)
     #df['Month'] = df['Month'].astype(str)
     df['Customer ID'] = df['Customer ID'].astype(str)
+    import datetime
     from datetime import datetime
     df['Working Date'] = df['Working Date'].apply(lambda x: datetime.strptime(x, '%Y-%m-%d'))
     df['order_date'] = df['order_date'].apply(lambda x: datetime.strptime(x, '%Y-%m-%d'))
