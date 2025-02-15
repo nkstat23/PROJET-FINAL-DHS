@@ -47,7 +47,8 @@ external_stylesheets = [
     dbc.themes.LUX,
     "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
 ]
-app = Dash(__name__)
+## Web App Layout
+app = Dash(title="Wine Analysis")
 server = app.server
 
 
@@ -848,6 +849,5 @@ def update_client_loyal_table(year_range, selected_categories, selected_payments
 # =============================================================================
 # LANCEMENT DE L'APPLICATION
 # =============================================================================
-if __name__ == '__main__':
-    # On ouvre l'application dans le navigateur sur le port 8051
-    app.run_server(debug=False)
+if __name__ == "__main__":
+    app.run_server(debug=True)
