@@ -48,7 +48,7 @@ external_stylesheets = [
     "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
 ]
 ## Web App Layout
-app = Dash(title="Wine Analysis")
+app = Dash(title="Wine Analysis",external_stylesheets=external_stylesheets)
 server = app.server
 
 
